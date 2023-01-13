@@ -10,7 +10,8 @@ public class Main {
         String tName=thread.getName();
         System.out.println("the thread name is "+tName);
 
-
+        thread.setName("MainThread");
+        System.out.println("the thread name after setting "+thread.getName());
         System.out.println("thread ending....");
     }
 }
