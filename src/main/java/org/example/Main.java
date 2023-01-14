@@ -12,6 +12,11 @@ public class Main {
 
         thread.setName("MainThread");
         System.out.println("the thread name after setting "+thread.getName());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println("thread ending....");
     }
 }
