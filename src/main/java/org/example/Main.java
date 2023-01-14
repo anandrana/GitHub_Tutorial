@@ -12,6 +12,7 @@ public class Main {
 
         thread.setName("MainThread");
         System.out.println("the thread name after setting "+thread.getName());
+        System.out.println("the current id is "+thread.getId());
         System.out.println("thread ending....");
     }
 }
